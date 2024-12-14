@@ -6,10 +6,10 @@
     
     # Permitir todas las páginas clave para indexación
      Allow: /index.html 
-     Allow: /lapidas.html 
-     Allow: /creador.html 
-     Allow: /quienes.html 
-     Allow: /contacto.html 
+     Allow: /LAPIDAS/lapidas.html 
+     Allow: /CREADOR/creador.html 
+     Allow: /QUIENES/quienes.html 
+     Allow: /CONTACTO/contacto.html 
 
      # Permitir el rastreo de imágenes User-agent: Googlebot-Image 
 
