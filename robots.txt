@@ -14,4 +14,4 @@
      # Permitir el rastreo de imágenes User-agent: Googlebot-Image 
 
      Allow: /assets/ 
-     # Enlace al sitemap Sitemap: https://www.tusitioweb.com/sitemap.xml
+     # Enlace al sitemap Sitemap: https://lapidaslazaro.com/sitemap.xml
