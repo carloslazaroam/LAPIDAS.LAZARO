@@ -1,28 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lápidas Lázaro - Lápidas Personalizadas en Valencia - Calidad y Detalle Garantizado</title>
+
     <link href="./INICIO/styles.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <script src="https://wlada.github.io/vue-carousel-3d/js/carousel-3d.umd.js"></script>
     <!-- AOS CSS -->
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
+    <title>Lápidas Lázaro - Lápidas Personalizadas en Valencia - Calidad y Detalle Garantizado</title>
     <!-- SEO-->
-     <meta name="description" content="Fabricamos lápidas personalizadas en Valencia según tus necesidades, en diversos materiales y diseños para cualquier destino. Calidad y detalle para honrar a tus seres queridos." />
-     <meta name="author" content="Carlos Lázaro" />
-     <meta name="keywords" content="lápidas personalizadas, lápidas en valencia, fabricación de lápidas, lápidas de mármol, lápidas funerarias, lápidas grabadas, diseño de lápidas, lápidas para cementerios, lápidas a medidas, lápidas con grabados" />
-     
-     <!-- OG METATATGS-->
+    <meta name="description"
+        content="Fabricamos lápidas personalizadas en Valencia según tus necesidades, en diversos materiales y diseños para cualquier destino. Calidad y detalle para honrar a tus seres queridos." />
+    <meta name="author" content="Carlos Lázaro" />
+    <meta name="keywords"
+        content="lápidas personalizadas, lápidas en valencia, fabricación de lápidas, lápidas de mármol, lápidas funerarias, lápidas grabadas, diseño de lápidas, lápidas para cementerios, lápidas a medidas, lápidas con grabados" />
 
-     <meta property="og:type" content="website" />
-     <meta property="og:title" content="Lápidas Lázaro - Lápidas Personalizadas en Valencia - Calidad y Detalle Garantizado" />
-     <meta property="og:description" content="Fabricamos lápidas personalizadas en Valencia según tus necesidades, en diversos materiales y diseños para cualquier destino. Calidad y detalle para honrar a tus seres queridos." />
-     <meta property="og:image" content="./assets/logo.png" />
-    
+    <!-- OG METATATGS-->
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title"
+        content="Lápidas Lázaro - Lápidas Personalizadas en Valencia - Calidad y Detalle Garantizado" />
+    <meta property="og:description"
+        content="Fabricamos lápidas personalizadas en Valencia según tus necesidades, en diversos materiales y diseños para cualquier destino. Calidad y detalle para honrar a tus seres queridos." />
+    <meta property="og:image" content="./assets/logo.png" />
+
 </head>
+
 <body>
 
     <header class="main-header">
@@ -34,270 +41,290 @@
                 <li><a href="./CREADOR/creador.html">CREA TU LÁPIDA</a></li>
                 <li><a href="./QUIENES/quienes.html">QUIENES SOMOS</a></li>
                 <li><a href="./CONTACTO/contacto.html">CONTACTO</a></li>
-                
+
             </ul>
         </nav>
-      </header>
-
-     
-
- 
-<header class="showcase">
-
-    <div class="content">
-      
-        <img src="./INICIO/triangulo.png" class="logo" alt="Traversy Media">
-        <div class="title">
-            Bienvenidos a Lápidas Lázaro
-        </div>
-        <div class="text">
-        </div>
-    </div>
-</header>
+    </header>
 
 
-<!-- Carousel -->
-<section class="carousel" data-aos="fade-up">
-    <div class="container center">
-        <div id="example">
-            <carousel-3d ref="mycarousel" :count="slides.length">
-                <slide v-for="(slide, i) in slides" :index="i" :key="i">
-                    <img :src="slide.image" :alt="slide.name">
-                </slide>
-            </carousel-3d>
-        </div>
-    </div>
-</section>
 
-<!-- About -->
-<section class="about bg-light">
-    <div class="container">
-        <div class="grid-2">
-            <div class="center">
-              <img src="./INICIO/martillo.jpg" width="400px" height="500px" data-aos="fade-up">
+
+    <header class="showcase">
+
+        <div class="content">
+            <img src="./INICIO/triangulo.png" class="logo" alt="Traversy Media">
+            <h1 class="title">Bienvenidos a Lápidas Lázaro</h1>
+            <div class="text">
             </div>
-            <div data-aos="fade-up">
-                <p style="font-size: xx-large; font-weight: 450;">Nuestros servicios</p>
-                <p>Fabricamos  lápidas  en granito, mármol y otros materiales. Trabajamos  a demanda del cliente, creando  presentaciones en  3D  donde anticipamos  los detalles , ajustes, para enviar a la  fabricación final. Destacamos los acabados profesionales y la calidad de los materiales usados, con el añadido de  una experiencia de  50 años ininterrumpidos, dos generaciones de marmolistas-lapidarios conectados.
-
-                  Fabricamos  e integramos todos los componentes y accesorios. 
-                  
-                  Diseñamos y creamos prototipos en 2d y 3d  para producto  final.
-                  
-                  En el  departamento  de  foto-cerámica  se digitalizan, retocan y  crean  imágenes religiosas y retrato de personas  en porcelana, esmaltadas y  cocidas a altas temperaturas en muflas, confiriéndoles así una resistencia extrema, garantizando la colocación de nuestros productos en exteriores sin alteraciones ni desgaste .
-                  
-                  Programamos y trazamos nuestros diseños en CAD para  CNC en diversos formatos, s.</p>
-también  sobre imágenes y motivos artísticos para máquinas láser, arenados, impacto y  micro grabado. Todos los diseños y trabajos son desarrollados íntegramente en nuestras instalaciones, sin servicios   externo            </div>
         </div>
-    </div>
-</section>
+    </header>
 
 
-  <!-- Services -->
-  <section class="services">
-    <div class="container grid-3 center">
-        <div data-aos="fade-up">
-            <img src="./INICIO/wh.png" width="100px" height="100px">
-            <p style="font-size: xx-large; font-weight: 450;">Grabación y restauración</p>
-            
-           <div class="carru-container" style="margin-top: 50px;">
-                <div class="carru">
-                    <img src="./INICIO/cap1.jpg" class="carru-image active" data-aos="fade-left">
-                    <img src="./INICIO/cap2.jpg" class="carru-image active" data-aos="fade-up">
-                    <img src="./INICIO/cap3.jpg" class="carru-image active" data-aos="fade-right">
-                </div>
-                
+    <!-- Carousel -->
+    <section class="carousel" data-aos="fade-up">
+        <div class="container center">
+            <div id="example">
+                <carousel-3d ref="mycarousel" :count="slides.length">
+                    <slide v-for="(slide, i) in slides" :index="i" :key="i">
+                        <img :src="slide.image" :alt="slide.name">
+                    </slide>
+                </carousel-3d>
             </div>
-        
         </div>
-        <div data-aos="fade-up">
-            <img src="./INICIO/shield.png" width="100px" height="100px">
-            <p style="font-size: xx-large; font-weight: 450;">Placas</p>
-            <img src="./INICIO/memorial.png" width="640px" height="400px" data-aos="fade-right">
-        </div>
-        <div>
-            
-            <p style="font-size: xx-large; font-weight: 450;">50 años de empresa</p>
-            <img src="./INICIO/50anivers.png" width="150px" height="150px" data-aos="fade-left">
-        </div>
-    </div>
-</section>
+    </section>
 
-
-<!-- Work -->
-<section class="about bg-light">
-    <div class="container">
-        <div class="grid-5">
-            <div class="grid-4">
+    <!-- About -->
+    <section class="about bg-light">
+        <div class="container">
+            <div class="grid-2">
                 <div class="center">
-                    <img src="./INICIO/bw.jpg" width="350px" height="250px" data-aos="fade-up">
-                  </div>
-                  <div data-aos="fade-up">
-                      <p style="font-size: xx-large; font-weight: 450;">Lápidas personalizadas y exclusivas</p>
-                      <p>Panoramics la nueva serie de lápidas que cambiarán  el concepto de la lápida tradicional.
-      
-                          Lápidas con  personalidad,  con exclusividad y con multitud de diseños.
-                          
-                          Totalmente personalizadas, danos tu idea y nosotros la plasmaremos sobre  la lápida para tener un trabajo único y diferente .
-                          
-                          Nuestro departamento y desarrollo artístico realizará los diseños y bocetos hasta plasmar la idea sobre la piedra.</p>
-                  </div>
+                    <img src="./INICIO/martillo.jpg" width="400px" height="500px" data-aos="fade-up">
+                </div>
+                <div data-aos="fade-up">
+                    <h2 style="font-size: xx-large; font-weight: 450;">Nuestros servicios</h2>
+                    <p>Fabricamos lápidas en granito, mármol y otros materiales. Trabajamos a demanda del cliente,
+                        creando presentaciones en 3D donde anticipamos los detalles , ajustes, para enviar a la
+                        fabricación final. Destacamos los acabados profesionales y la calidad de los materiales usados,
+                        con el añadido de una experiencia de 50 años ininterrumpidos, dos generaciones de
+                        marmolistas-lapidarios conectados.
+
+                        Fabricamos e integramos todos los componentes y accesorios.
+
+                        Diseñamos y creamos prototipos en 2d y 3d para producto final.
+
+                        En el departamento de foto-cerámica se digitalizan, retocan y crean imágenes religiosas y
+                        retrato de personas en porcelana, esmaltadas y cocidas a altas temperaturas en muflas,
+                        confiriéndoles así una resistencia extrema, garantizando la colocación de nuestros productos en
+                        exteriores sin alteraciones ni desgaste .
+
+                        Programamos y trazamos nuestros diseños en CAD para CNC en diversos formatos, s.</p>
+                    también sobre imágenes y motivos artísticos para máquinas láser, arenados, impacto y micro grabado.
+                    Todos los diseños y trabajos son desarrollados íntegramente en nuestras instalaciones, sin servicios
+                    externo
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Services -->
+    <section class="services">
+        <div class="container grid-3 center">
+            <div data-aos="fade-up">
+                <img src="./INICIO/wh.png" width="100px" height="100px">
+                <h2 style="font-size: xx-large; font-weight: 450;">Grabación y restauración</h2>
+
+                <div class="carru-container" style="margin-top: 50px;">
+                    <div class="carru">
+                        <img src="./INICIO/cap1.jpg" class="carru-image active" data-aos="fade-left">
+                        <img src="./INICIO/cap2.jpg" class="carru-image active" data-aos="fade-up">
+                        <img src="./INICIO/cap3.jpg" class="carru-image active" data-aos="fade-right">
+                    </div>
+
+                </div>
 
             </div>
             <div data-aos="fade-up">
-                <p style="font-size: xx-large; font-weight: 450;">Mini lápidas-Cinerarios para personas</p>
-                <p>Mini lápidas de nicho para  pared , monolito y  suelo en cementerio o  parcela privada(chalet), terreno o campo particular, otra forma de recordar a nuestros seres queridos,  con  diferentes acabados y 100% personalizables.</p>
-                <img src="./INICIO/xd.png" width="100%" height="80%">
+                <img src="./INICIO/shield.png" width="100px" height="100px">
+                <p style="font-size: xx-large; font-weight: 450;">Placas</p>
+                <img src="./INICIO/memorial.png" width="640px" height="400px" data-aos="fade-right">
             </div>
-            <div data-aos="fade-left">
-                <p style="font-size: xx-large; font-weight: 450;">Mini lápidas-Cinerarios para animales</p>
-                <p>Mini lápidas de nicho o monolito para suelo o terrenos particulares, para mascotas, nuestros fieles amigos que siempre están a nuestro lado, ahora ya pueden ser recordados con  lápidas o monolitos funerarios en diferentes acabados y 100% personalizables.</p>
-                <img src="./INICIO/xd2.png" width="100%" height="80%">
-            </div>
+            <div>
 
-            <div data-aos="fade-right">
-                <p style="font-size: xx-large; font-weight: 450;">Códigos QR</p>
-                <p> Código QR, mediante este encriptado de datos podemos acceder por medio de un terminal móvil smartphone o tablet y que tengan conexión a internet para poder enlazar a imágenes, archivos, videos de nuestro ser querido, que previamente habremos alojado en una web o servidor para que cualquier familiar, amigo o conocido mantenga siempre el recuerdo latente más allá de la lápida física.</p>
-                <img src="./INICIO/qr.png">
+                <p style="font-size: xx-large; font-weight: 450;">50 años de empresa</p>
+                <img src="./INICIO/50anivers.png" width="150px" height="150px" data-aos="fade-left">
             </div>
         </div>
-    </div>
-</section>
-
-<!--FONT AWESOME-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </section>
 
 
-<!--FOOTER-->
-<footer data-aos="fade-up">
-<div class="top_header" >
-<section>
-<span><i class="fa fa-map-marker"></i></span>
-<span>C/, Merlot, Villar Del Arzobispo, Valencia, 46170</span>
-</section>
-<section>
-<span><i class="fa fa-phone"></i></span>
-<span>(+34) 693707910</span>
-</section>
-<section>
-<span><i class="fa fa-envelope"></i></span>
-<span>ramiro.lazaro@hotmail.com</span>
-</section>
-</div>
-<span class="border-shape"></span>
-<div class="bottom_content">
-<section>
-<a href="https://www.facebook.com/p/L%C3%A1pidas-L%C3%A1zaro-100063497982493/?_rdr"><i class="fa fa-facebook"></i></a>
-<a href="https://www.instagram.com/lapidas_lazaro/?hl=es"><i class="fa fa-instagram"></i></a>
+    <!-- Work -->
+    <section class="about bg-light">
+        <div class="container">
+            <div class="grid-5">
+                <div class="grid-4">
+                    <div class="center">
+                        <img src="./INICIO/bw.jpg" width="350px" height="250px" data-aos="fade-up">
+                    </div>
+                    <div data-aos="fade-up">
+                        <h2 style="font-size: xx-large; font-weight: 450;">Lápidas personalizadas y exclusivas</h2>
+                        <p>Panoramics la nueva serie de lápidas que cambiarán el concepto de la lápida tradicional.
 
-</section>
-<section>
-<a href="#">Inicio</a>
-<a href="../INICIO/LAPIDAS/lapidas.html">Lápidas</a>
-<a href="../INICIO/CREADOR/creador.html">Crea tu lápida</a>
-<a href="../INICIO/QUIENES/quienes.html">Quienes somos</a>
-<a href="../INICIO/CONTACTO/contacto.html">Contacto</a>
+                            Lápidas con personalidad, con exclusividad y con multitud de diseños.
 
-</section>
-</div>
-<div class="copyright">
-    <img src="./INICIO/logo.png" width="120px" height="50px">
-</div>
+                            Totalmente personalizadas, danos tu idea y nosotros la plasmaremos sobre la lápida para
+                            tener un trabajo único y diferente .
+
+                            Nuestro departamento y desarrollo artístico realizará los diseños y bocetos hasta plasmar la
+                            idea sobre la piedra.</p>
+                    </div>
+
+                </div>
+                <div data-aos="fade-up">
+                    <p style="font-size: xx-large; font-weight: 450;">Mini lápidas-Cinerarios para personas</p>
+                    <p>Mini lápidas de nicho para pared , monolito y suelo en cementerio o parcela privada(chalet),
+                        terreno o campo particular, otra forma de recordar a nuestros seres queridos, con diferentes
+                        acabados y 100% personalizables.</p>
+                    <img src="./INICIO/xd.png" width="100%" height="80%">
+                </div>
+                <div data-aos="fade-left">
+                    <p style="font-size: xx-large; font-weight: 450;">Mini lápidas-Cinerarios para animales</p>
+                    <p>Mini lápidas de nicho o monolito para suelo o terrenos particulares, para mascotas, nuestros
+                        fieles amigos que siempre están a nuestro lado, ahora ya pueden ser recordados con lápidas o
+                        monolitos funerarios en diferentes acabados y 100% personalizables.</p>
+                    <img src="./INICIO/xd2.png" width="100%" height="80%">
+                </div>
+
+                <div data-aos="fade-right">
+                    <p style="font-size: xx-large; font-weight: 450;">Códigos QR</p>
+                    <p> Código QR, mediante este encriptado de datos podemos acceder por medio de un terminal móvil
+                        smartphone o tablet y que tengan conexión a internet para poder enlazar a imágenes, archivos,
+                        videos de nuestro ser querido, que previamente habremos alojado en una web o servidor para que
+                        cualquier familiar, amigo o conocido mantenga siempre el recuerdo latente más allá de la lápida
+                        física.</p>
+                    <img src="./INICIO/qr.png">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--FONT AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
-</footer>
-<footer class="center bg-dark">
-    <p>Lápidas Lázaro &copy; 2024</p>
-</footer>
+    <!--FOOTER-->
+    <footer data-aos="fade-up">
+        <div class="top_header">
+            <section>
+                <span><i class="fa fa-map-marker"></i></span>
+                <span>C/, Merlot, Villar Del Arzobispo, Valencia, 46170</span>
+            </section>
+            <section>
+                <span><i class="fa fa-phone"></i></span>
+                <span>(+34) 693707910</span>
+            </section>
+            <section>
+                <span><i class="fa fa-envelope"></i></span>
+                <span>ramiro.lazaro@hotmail.com</span>
+            </section>
+        </div>
+        <span class="border-shape"></span>
+        <div class="bottom_content">
+            <section>
+                <a href="https://www.facebook.com/p/L%C3%A1pidas-L%C3%A1zaro-100063497982493/?_rdr"><i
+                        class="fa fa-facebook"></i></a>
+                <a href="https://www.instagram.com/lapidas_lazaro/?hl=es"><i class="fa fa-instagram"></i></a>
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-<a href="https://api.whatsapp.com/send?phone=606768832&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." class="float" target="_blank">
-<i class="fa fa-whatsapp my-float"></i>
-</a>
+            </section>
+            <section>
+                <a href="#">Inicio</a>
+                <a href="../INICIO/LAPIDAS/lapidas.html">Lápidas</a>
+                <a href="../INICIO/CREADOR/creador.html">Crea tu lápida</a>
+                <a href="../INICIO/QUIENES/quienes.html">Quienes somos</a>
+                <a href="../INICIO/CONTACTO/contacto.html">Contacto</a>
 
-<!-- AOS JS -->
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<script>
-    AOS.init();
-</script>
-<script>
-    
-    new Vue({
-        el: '#example',
-        data: {
-            slides: [
-                {name: 'Slide 1', image: './INICIO/carousel/slide1.jpg'},
-                {name: 'Slide 2', image: './INICIO/carousel/slide2.jpg'},
-                {name: 'Slide 3', image: './INICIO/carousel/slide3.jpg'},
-                {name: 'Slide 4', image: './INICIO/carousel/slide4.jpg'},
-                {name: 'Slide 5', image: './INICIO/carousel/slide5.jpg'},
-                {name: 'Slide 6', image: './INICIO/carousel/slide6.jpg'},
-                {name: 'Slide 7', image: './INICIO/carousel/slide7.jpg'},
-                {name: 'Slide 8', image: './INICIO/carousel/slide8.jpg'},
-                {name: 'Slide 9', image: './INICIO/carousel/slide9.jpg'},
-                
-            ]
-        },
-        components: {
-            'carousel-3d': window['carousel-3d'].Carousel3d,
-            'slide': window['carousel-3d'].Slide
-        },
-        methods: {
-            goToSlide(index) {
-                this.$refs.mycarousel.goSlide(index)
+            </section>
+        </div>
+        <div class="copyright">
+            <img src="./INICIO/logo.png" width="120px" height="50px">
+        </div>
+
+
+    </footer>
+    <footer class="center bg-dark">
+        <p>Lápidas Lázaro &copy; 2024</p>
+    </footer>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <a href="https://api.whatsapp.com/send?phone=606768832&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202."
+        class="float" target="_blank">
+        <i class="fa fa-whatsapp my-float"></i>
+    </a>
+
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+
+        new Vue({
+            el: '#example',
+            data: {
+                slides: [
+                    { name: 'Slide 1', image: './INICIO/carousel/slide1.jpg' },
+                    { name: 'Slide 2', image: './INICIO/carousel/slide2.jpg' },
+                    { name: 'Slide 3', image: './INICIO/carousel/slide3.jpg' },
+                    { name: 'Slide 4', image: './INICIO/carousel/slide4.jpg' },
+                    { name: 'Slide 5', image: './INICIO/carousel/slide5.jpg' },
+                    { name: 'Slide 6', image: './INICIO/carousel/slide6.jpg' },
+                    { name: 'Slide 7', image: './INICIO/carousel/slide7.jpg' },
+                    { name: 'Slide 8', image: './INICIO/carousel/slide8.jpg' },
+                    { name: 'Slide 9', image: './INICIO/carousel/slide9.jpg' },
+
+                ]
+            },
+            components: {
+                'carousel-3d': window['carousel-3d'].Carousel3d,
+                'slide': window['carousel-3d'].Slide
+            },
+            methods: {
+                goToSlide(index) {
+                    this.$refs.mycarousel.goSlide(index)
+                }
             }
-        }
-    });
+        });
 
 
-    let slideIndex = 1;
-let autoSlideInterval;
+        let slideIndex = 1;
+        let autoSlideInterval;
 
-showSlides(slideIndex);
-startAutoSlide();
-
-function currentSlide(n) {
-    showSlides(slideIndex = n);
-    resetAutoSlide();
-}
-
-function showSlides(n) {
-    let slides = document.getElementsByClassName("carru-image");
-    let dots = document.getElementsByClassName("dot");
-
-    if (n > slides.length) { slideIndex = 1 }
-    if (n < 1) { slideIndex = slides.length }
-
-    for (let i = 0; i < slides.length; i++) {
-        slides[i].classList.remove("active");
-    }
-
-    for (let i = 0; i < dots.length; i++) {
-        dots[i].classList.remove("active");
-    }
-
-    slides[slideIndex - 1].classList.add("active");
-    dots[slideIndex - 1].classList.add("active");
-}
-
-function startAutoSlide() {
-    autoSlideInterval = setInterval(() => {
-        slideIndex++;
         showSlides(slideIndex);
-    }, 4000); // Cambia cada 4 segundos
-}
+        startAutoSlide();
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+            resetAutoSlide();
+        }
+
+        function showSlides(n) {
+            let slides = document.getElementsByClassName("carru-image");
+            let dots = document.getElementsByClassName("dot");
+
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].classList.remove("active");
+            }
+
+            for (let i = 0; i < dots.length; i++) {
+                dots[i].classList.remove("active");
+            }
+
+            slides[slideIndex - 1].classList.add("active");
+            dots[slideIndex - 1].classList.add("active");
+        }
+
+        function startAutoSlide() {
+            autoSlideInterval = setInterval(() => {
+                slideIndex++;
+                showSlides(slideIndex);
+            }, 4000); // Cambia cada 4 segundos
+        }
 
 
 
-function resetAutoSlide() {
-    clearInterval(autoSlideInterval);
-    startAutoSlide();
-}
+        function resetAutoSlide() {
+            clearInterval(autoSlideInterval);
+            startAutoSlide();
+        }
 
 
 
 
 
-</script>
+    </script>
 </body>
+
 </html>

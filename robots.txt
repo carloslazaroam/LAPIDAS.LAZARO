@@ -1,0 +1,17 @@
+# Bloqueo general para archivos sensibles y directorios no relevantes User-agent: *
+ Disallow: /private/
+  Disallow: /temp/
+   Disallow: /scripts/
+    Disallow: /cgi-bin/ 
+    
+    # Permitir todas las páginas clave para indexación
+     Allow: /index.html 
+     Allow: /lapidas.html 
+     Allow: /creador.html 
+     Allow: /quienes.html 
+     Allow: /contacto.html 
+
+     # Permitir el rastreo de imágenes User-agent: Googlebot-Image 
+
+     Allow: /assets/ 
+     # Enlace al sitemap Sitemap: https://www.tusitioweb.com/sitemap.xml
