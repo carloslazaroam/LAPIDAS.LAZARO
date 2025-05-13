@@ -415,12 +415,12 @@ body {
       display: flex;
       flex-direction: column;
       gap: 2rem;
-      margin-top: 6rem;
+      margin-top: 9rem;
      
     }
   
     .about p {
-      font-size: 2rem !important;
+      font-size: 1.5rem !important;
       text-align: center !important;
     }
   
@@ -435,6 +435,7 @@ body {
       align-items: center;
       margin-top: 2rem;
       gap: 1rem;
+      
     }
   
     .whatsapp-icon {
@@ -481,11 +482,11 @@ body {
     .contact-form input,
     .contact-form textarea,
     .contact-form button {
-      width: 100%;
-      padding: 0.7rem;
+      width: 80%;
+      
       font-size: 1rem;
       border-radius: 4px;
-      border: 1px solid #ccc;
+      border: 1px solid #000000;
     }
   
     .contact-form button {
