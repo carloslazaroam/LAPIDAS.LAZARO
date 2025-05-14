@@ -333,3 +333,141 @@ img {
     top: 1px;
     width: 100px;
     }
+
+
+      @media screen and (max-width: 768px) {
+
+        .modal {
+            padding-top: 120px; /* aumenta el espacio superior en móviles */
+          }
+        
+          .modal-content {
+            width: 80%; /* opcional: que se vea más natural en móviles */
+          }
+
+          main {
+            margin-top: 18rem;
+          }
+
+       
+
+        .navbar {
+            width: 70%;
+            top: 200px;
+            margin: 0 auto;
+          }
+        
+          .nav-list {
+            flex-wrap: wrap;
+            justify-content: center;
+          }
+        
+          .nav-list li {
+            width: 40%;
+            margin: 1%;
+            text-align: center;
+          }
+        
+          .nav-list a {
+            font-size: 1.5rem;
+          }
+        
+        
+        .top_header {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 1rem;
+          text-align: center;
+        }
+        
+        .top_header section {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          font-size: 1rem;
+          gap: 0.3rem;
+        }
+        
+        .top_header i {
+          font-size: 1.2rem;
+          margin-bottom: 0.3rem;
+        }
+        
+        .bottom_content {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 1rem;
+          margin-top: 1.5rem;
+        }
+        
+        .bottom_content section {
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          gap: 0.8rem;
+        }
+        
+        .bottom_content a {
+          font-size: 0.95rem;
+          text-align: center;
+        }
+        
+        .copyright {
+          margin-top: 1rem;
+          display: flex;
+          justify-content: center;
+        }
+        
+        .copyright img {
+          width: 100px;
+          height: auto;
+          display: block;
+        }
+        
+        }
+      
+        @media screen and (max-width: 768px) {
+          .main-header-image {
+            max-height: 200px;
+            width: 100%;
+            object-fit: cover;
+            margin: 0 auto;
+          }
+        }
+
+        .pagination {
+            display: none; /* visible solo en móvil */
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 20px 0;
+        }
+        
+        .pagination button {
+            background-color: #444;
+            color: white;
+            border: none;
+            padding: 8px 14px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+        
+        .pagination button.active {
+            background-color: #666;
+            font-weight: bold;
+        }
+        
+        .pagination button:hover:not(.active) {
+            background-color: #555;
+        }
+        
+        @media (max-width: 768px) {
+            .pagination {
+                display: flex;
+            }
+        }
+        

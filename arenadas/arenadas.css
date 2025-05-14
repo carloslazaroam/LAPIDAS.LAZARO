@@ -345,10 +345,14 @@ img {
             width: 80%; /* opcional: que se vea más natural en móviles */
           }
 
+          main {
+            margin-top: 18rem;
+          }
+
        
 
         .navbar {
-            width: 90%;
+            width: 70%;
             top: 200px;
             margin: 0 auto;
           }

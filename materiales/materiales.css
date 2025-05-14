@@ -371,5 +371,134 @@ img {
         font-size: x-large;
       }
 
+        @media screen and (max-width: 768px) {
+
+        .modal {
+            padding-top: 120px; /* aumenta el espacio superior en móviles */
+          }
+        
+          .modal-content {
+            width: 80%; /* opcional: que se vea más natural en móviles */
+          }
+
+          main {
+            margin-top: 18rem;
+          }
+
+       
+
+        .navbar {
+            width: 70%;
+            top: 200px;
+            margin: 0 auto;
+          }
+        
+          .nav-list {
+            flex-wrap: wrap;
+            justify-content: center;
+          }
+        
+          .nav-list li {
+            width: 40%;
+            margin: 1%;
+            text-align: center;
+          }
+        
+          .nav-list a {
+            font-size: 1.5rem;
+          }
+        
+        
+        .top_header {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 1rem;
+          text-align: center;
+        }
+        
+        .top_header section {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          font-size: 1rem;
+          gap: 0.3rem;
+        }
+        
+        .top_header i {
+          font-size: 1.2rem;
+          margin-bottom: 0.3rem;
+        }
+        
+        .bottom_content {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 1rem;
+          margin-top: 1.5rem;
+        }
+        
+        .bottom_content section {
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          gap: 0.8rem;
+        }
+        
+        .bottom_content a {
+          font-size: 0.95rem;
+          text-align: center;
+        }
+        
+        .copyright {
+          margin-top: 1rem;
+          display: flex;
+          justify-content: center;
+        }
+        
+        .copyright img {
+          width: 100px;
+          height: auto;
+          display: block;
+        }
+        
+        }
+      
+        @media screen and (max-width: 768px) {
+          .main-header-image {
+            max-height: 200px;
+            width: 100%;
+            object-fit: cover;
+            margin: 0 auto;
+          }
+        }
+
+        @media screen and (max-width: 768px) {
+  .containerd {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .container {
+    margin-top: 14rem;
+  }
+
+  .containerd .item {
+    flex: 1 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+
+  .containerd .item img {
+    width: 100%;
+    height: auto;
+  }
+
+  .caption {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+}
 
   

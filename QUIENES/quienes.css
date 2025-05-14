@@ -332,12 +332,11 @@ body {
 
       @media screen and (max-width: 768px) {
         
-        #fondito{
-          margin-top: 16rem;
-        }
+        
         .about .grid-2 {
           display: flex;
           flex-direction: column;
+          margin-top: 6rem;
         }
 
         .easd,.taller {

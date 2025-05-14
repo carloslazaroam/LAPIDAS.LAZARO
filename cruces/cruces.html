@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <title>Document</title>
 </head>
+
 <body>
     <header class="main-header">
         <img src="../INICIO/lapidas.png" class="main-header-image" alt="Lapidas Lázaro">
@@ -23,7 +25,8 @@
         </nav>
     </header>
     <main>
-        <h3 style="text-align: center; color: #ffffff; font-size: 40px; margin-top: 120px; font-weight: 150;">Catálogo de cruces</h3>
+        <h3 style="text-align: center; color: #ffffff; font-size: 40px; margin-top: 120px; font-weight: 150;">Catálogo
+            de cruces</h3>
         <div class="image-grid">
             <!-- Las imágenes se agregarán aquí -->
             <div class="image-item" data-aos="fade-up" data-aos-delay="50"><img src="./Cru/1.jpg" alt="C01"></div>
@@ -54,12 +57,13 @@
             <div class="image-item" data-aos="fade-up" data-aos-delay="1300"><img src="./Cru/26.jpg" alt="C26"></div>
             <div class="image-item" data-aos="fade-up" data-aos-delay="1350"><img src="./Cru/27.jpg" alt="C27"></div>
             <div class="image-item" data-aos="fade-up" data-aos-delay="1400"><img src="./Cru/28.jpg" alt="C28"></div>
-            
-            
+
+
         </div>
+        <div class="pagination" id="pagination-controls"> </div>
     </main>
-    
-    
+
+
     <!-- Modal -->
     <div id="myModal" class="modal">
         <span class="close">&times;</span>
@@ -70,112 +74,168 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<script>
-    AOS.init({
+    <script>
+        AOS.init({
             once: true, // AOS animations will run only once
         });
-</script>
-<!--FOOTER-->
+    </script>
+    <!--FOOTER-->
 
-     <!--FONT AWESOME-->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-     <footer data-aos="fade-up">
-        <div class="top_header" >
-        <section>
-        <span><i class="fa fa-map-marker"></i></span>
-        <span>C/, Merlot, Villar Del Arzobispo, Valencia, 46170</span>
-        </section>
-        <section>
-        <span><i class="fa fa-phone"></i></span>
-        <span>(+34) 693707910</span>
-        </section>
-        <section>
-        <span><i class="fa fa-envelope"></i></span>
-        <span>ramiro.lazaro@hotmail.com</span>
-        </section>
+    <!--FONT AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--FOOTER-->
+    <footer data-aos="fade-up">
+        <div class="top_header">
+            <section>
+                <span><i class="fa fa-map-marker"></i></span>
+                <span>C/, Merlot, Villar Del Arzobispo, Valencia, 46170</span>
+            </section>
+            <section>
+                <span><i class="fa fa-phone"></i></span>
+                <span>(+34) 606768832</span>
+            </section>
+            <section>
+                <span><i class="fa fa-envelope"></i></span>
+                <span>lapidas.lazaro@hotmail.com</span>
+            </section>
         </div>
         <span class="border-shape"></span>
         <div class="bottom_content">
-        <section>
-            <a href="https://www.facebook.com/p/L%C3%A1pidas-L%C3%A1zaro-100063497982493/?_rdr"><i class="fa fa-facebook"></i></a>
-            <a href="https://www.instagram.com/lapidas_lazaro/?hl=es"><i class="fa fa-instagram"></i></a>
-        </section>
-        <section>
-        <a href="../INICIO/index.html">Inicio</a>
-        <a href="../LAPIDAS/lapidas.html">Lápidas</a>
-        <a href="../CREADOR/creador.html">Crea tu lápida</a>
-        <a href="../QUIENES/quienes.html">Quienes somos</a>
-        <a href="../CONTACTO/contacto.html">Contacto</a>
-        
-        </section>
+            <section>
+                <a href="https://www.facebook.com/p/L%C3%A1pidas-L%C3%A1zaro-100063497982493/?_rdr"><i
+                        class="fa fa-facebook"></i></a>
+                <a href="https://www.instagram.com/lapidas_lazaro/?hl=es"><i class="fa fa-instagram"></i></a>
+
+            </section>
+            <section>
+                <a href="../index.html">Inicio</a>
+                <a href="../LAPIDAS/lapidas.html">Lápidas</a>
+                <a href="../CREADOR/creador.html">Crea tu lápida</a>
+                <a href="../QUIENES/quienes.html">Quienes somos</a>
+                <a href="../CONTACTO/contacto.html">Contacto</a>
+            </section>
         </div>
         <div class="copyright">
             <img src="../INICIO/logo.png" width="120px" height="50px">
         </div>
-        
-        </footer>
-        <footer class="center bg-dark">
-            <p style="text-align: center;">Lápidas Lázaro &copy; 2024</p>
-        </footer>
-        
-    
-          
+
+    </footer>
+    <footer class="center bg-dark">
+        <p style="text-align: center;">Lápidas Lázaro &copy; 2024</p>
+    </footer>
+
+
+
     <script src="script.js"></script>
 </body>
+
 </html>
 
 <script>
     document.addEventListener('DOMContentLoaded', function () {
-    const images = document.querySelectorAll('.image-item img');
-    const modal = document.getElementById('myModal');
-    const modalImg = document.getElementById('img01');
-    const captionText = document.querySelector('.caption');
-    const closeBtn = document.querySelector('.close');
-    const prevBtn = document.querySelector('.prev');
-    const nextBtn = document.querySelector('.next');
-    let currentIndex = 0;
+        const images = document.querySelectorAll('.image-item img');
+        const modal = document.getElementById('myModal');
+        const modalImg = document.getElementById('img01');
+        const captionText = document.querySelector('.caption');
+        const closeBtn = document.querySelector('.close');
+        const prevBtn = document.querySelector('.prev');
+        const nextBtn = document.querySelector('.next');
+        let currentIndex = 0;
 
-    function openModal(index) {
-        modal.style.display = 'block';
-        modalImg.src = images[index].src;
-        captionText.innerHTML = images[index].alt;
-        currentIndex = index;
-    }
-
-    function closeModal() {
-        modal.style.display = 'none';
-    }
-
-    function showNext() {
-        currentIndex = (currentIndex + 1) % images.length;
-        modalImg.src = images[currentIndex].src;
-        captionText.innerHTML = images[currentIndex].alt;
-    }
-
-    function showPrev() {
-        currentIndex = (currentIndex - 1 + images.length) % images.length;
-        modalImg.src = images[currentIndex].src;
-        captionText.innerHTML = images[currentIndex].alt;
-    }
-
-    images.forEach((img, index) => {
-        img.addEventListener('click', () => openModal(index));
-    });
-
-    closeBtn.addEventListener('click', closeModal);
-    nextBtn.addEventListener('click', showNext);
-    prevBtn.addEventListener('click', showPrev);
-
-    document.addEventListener('keydown', function(event) {
-        if (event.key === 'Escape') {
-            closeModal();
-        } else if (event.key === 'ArrowRight') {
-            showNext();
-        } else if (event.key === 'ArrowLeft') {
-            showPrev();
+        function openModal(index) {
+            modal.style.display = 'block';
+            modalImg.src = images[index].src;
+            captionText.innerHTML = images[index].alt;
+            currentIndex = index;
         }
+
+        function closeModal() {
+            modal.style.display = 'none';
+        }
+
+        function showNext() {
+            currentIndex = (currentIndex + 1) % images.length;
+            modalImg.src = images[currentIndex].src;
+            captionText.innerHTML = images[currentIndex].alt;
+        }
+
+        function showPrev() {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            modalImg.src = images[currentIndex].src;
+            captionText.innerHTML = images[currentIndex].alt;
+        }
+
+        images.forEach((img, index) => {
+            img.addEventListener('click', () => openModal(index));
+        });
+
+        closeBtn.addEventListener('click', closeModal);
+        nextBtn.addEventListener('click', showNext);
+        prevBtn.addEventListener('click', showPrev);
+
+        document.addEventListener('keydown', function (event) {
+            if (event.key === 'Escape') {
+                closeModal();
+            } else if (event.key === 'ArrowRight') {
+                showNext();
+            } else if (event.key === 'ArrowLeft') {
+                showPrev();
+            }
+        });
     });
-});
 
 </script>
 
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const images = document.querySelectorAll('.image-item');
+        const pagination = document.getElementById('pagination-controls');
+        const imagesPerPage = 10;
+        let currentPage = 1;
+
+        function updatePagination() {
+            const isMobile = window.innerWidth <= 768;
+
+            if (!isMobile) {
+                // Mostrar todo en escritorio
+                images.forEach(img => img.style.display = 'block');
+                pagination.style.display = 'none';
+                return;
+            }
+
+            const totalPages = Math.ceil(images.length / imagesPerPage);
+            const start = (currentPage - 1) * imagesPerPage;
+            const end = start + imagesPerPage;
+
+            images.forEach((img, index) => {
+                img.style.display = index >= start && index < end ? 'block' : 'none';
+            });
+
+            renderControls(totalPages);
+        }
+
+        function renderControls(totalPages) {
+            pagination.innerHTML = '';
+
+            for (let i = 1; i <= totalPages; i++) {
+                const btn = document.createElement('button');
+                btn.textContent = i;
+                if (i === currentPage) btn.classList.add('active');
+
+                btn.onclick = () => {
+                    currentPage = i;
+                    updatePagination();
+                };
+
+                pagination.appendChild(btn);
+            }
+        }
+
+        updatePagination();
+        // Forzar redibujado del layout (soluciona el "footer invisible")
+        window.scrollBy(0, 1);
+        window.scrollBy(0, -1);
+        window.addEventListener('resize', updatePagination);
+    });
+</script>
