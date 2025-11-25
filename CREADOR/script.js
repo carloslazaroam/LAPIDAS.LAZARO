@@ -9,7 +9,7 @@ function openTab(event, tabName) {
             icon: "error",
             title: "Error",
             text: "Por favor, selecciona un material antes de acceder al diseño.",
-            
+
         });
         return; // Evitar abrir la pestaña
     }
@@ -32,7 +32,7 @@ function openTab(event, tabName) {
 }
 
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Activar la pestaña "Material" por defecto
     document.getElementById('Material').style.display = 'block';
     document.querySelector('.tab-button').classList.add('active');
@@ -80,17 +80,17 @@ function addDesignToPreview(imageSrc) {
     }
     const img = document.createElement("div");
     img.classList.add("design-element");
-    
+
     const image = document.createElement("img");
     image.src = imageSrc;
     image.style.width = "100%";
     image.style.height = "100%";
     img.appendChild(image);
-    
+
     img.style.position = "absolute";
     img.style.left = "100px";
     img.style.top = "100px";
-    img.style.width = "100px"; 
+    img.style.width = "100px";
     img.style.cursor = "move";
 
     // Añadir eventos de manipulación
@@ -224,7 +224,7 @@ document.addEventListener('keydown', (e) => {
 
 // Añadir el diseño al hacer clic en una miniatura de diseño
 document.querySelectorAll('.thumbnail-design img').forEach(img => {
-    img.addEventListener('click', function() {
+    img.addEventListener('click', function () {
         addDesignToPreview(this.src);
     });
 });
@@ -233,7 +233,7 @@ document.querySelectorAll('.thumbnail-design img').forEach(img => {
 function filterDesigns(category) {
     // Obtener todas las miniaturas de diseño
     const thumbnails = document.querySelectorAll('.thumbnail-design');
-    
+
     thumbnails.forEach(thumbnail => {
         // Mostrar u ocultar dependiendo de la categoría seleccionada
         if (thumbnail.getAttribute('data-category') === category) {
@@ -557,7 +557,7 @@ button.addEventListener('click', () => {
         title: '1. Materiales',
         text: "Selecciona un material del contedor de la izquierda para ver como queda en el visor. Si solamente te interesa ver un diseño ya hecho puedes optar por los que estan en el contenedor derecho, de esa forma puedes evadir las pestañas 'Diseño' y 'Texto'",
         icon: 'question'
-      });
+    });
 });
 
 
@@ -566,7 +566,7 @@ button2.addEventListener('click', () => {
         title: '2. Diseño',
         text: "Al hacer click sobre un diseño, puedes moverlo libremente con el ratón por el visor y, manteniendo el nodo azul, alterar el tamaño del mismo. Al hacer click en el botón rojo se elimina. Solo se permite un máximo de 8 imágenes, contando diseños y complementos.'",
         icon: 'question'
-      });
+    });
 });
 
 
@@ -575,13 +575,29 @@ button3.addEventListener('click', () => {
         title: '3. Texto',
         text: "Modifica el texto estándar desde las casillas de la izquierda, usa las herramientas del editor para cambiar el texto a tu gusto. Puedes eliminar el texto presente haciendo click en el y luego al boton rojo. Finalmente, puedes inyectar el texto que tu quieras rellenando la casilla 'Texto' y pulsando el botón de añadir texto. Para poder usar el botón de  aumentar o reducir tamaño, primero se debe de hacer click sobre el texto que queremos manipular.",
         icon: 'question'
-      });
+    });
 });
 
-window.onload = function() {
+/*window.onload = function() {
     Swal.fire({
         title: 'Bienvenido al creador de lápidas!!!',
         text: "Aquí podrás seleccionar y diseñar tu prototipo de piedra como tú quieras, elige los diferentes materiales y diseños que más te gusten.",
         icon: 'info'
+    });
+};
+*/
+
+window.onload = function () {
+    Swal.fire({
+        title: 'Sitio en mantenimiento',
+        text: "Estamos realizando mejoras. Serás redirigido al inicio.",
+        icon: 'warning',
+        allowOutsideClick: false,
+        allowEscapeKey: false,
+        customClass: {
+            container: 'blur'   // <- AQUÍ SE ACTIVA EL BLUR REAL
+        }
+    }).then(() => {
+        window.location.href = "../index.html"; // Cambia esta URL
     });
 };

@@ -810,6 +810,14 @@ button.styled-button:hover {
       .my-float{
         margin-top:16px;
       }
+
+
+    .swal2-container.blur {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.4) !important;
+}
+
     
   
   

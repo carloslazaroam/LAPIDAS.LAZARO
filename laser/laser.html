@@ -59,9 +59,12 @@
 
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>
-        AOS.init({
-            once: true, // AOS animations will run only once
-        });
+        if (window.innerWidth > 768) {
+            // Solo se ejecuta en tablets/PC
+            AOS.init({
+                once: true
+            });
+        }
     </script>
     <!--FOOTER-->
 
@@ -94,7 +97,7 @@
                 <a href="../index.html">Inicio</a>
                 <a href="../LAPIDAS/lapidas.html">Lápidas</a>
                 <a href="../CREADOR/creador.html">Crea tu lápida</a>
-                <a href="../QUIENES/quienes.html">Quienes somos</a>
+                <a href="../QUIENES/quienes.html">Quiénes somos</a>
                 <a href="../CONTACTO/contacto.html">Contacto</a>
 
             </section>

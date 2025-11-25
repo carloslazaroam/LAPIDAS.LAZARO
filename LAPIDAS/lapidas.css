@@ -143,16 +143,26 @@ img {
   }
 }
 .ion-card__image--flowers {
-  background-image: url(https://unsplash.it/800/600?image=82);
+  background-image: url(./images/MAT.png);
 }
-.ion-card__image--river {
-  background-image: url(./images/cruces.jpg);
+.ion-card__image--cruz {
+  background-image: url(./images/CRU.png);
 }
-.ion-card__image--record {
-  background-image: url(https://unsplash.it/800/600?image=39);
+.ion-card__image--laser {
+  background-image: url(./images/LAS.jpg);
+}
+.ion-card__image--esc {
+  background-image: url(./images/ESC.jpg);
+}
+
+.ion-card__image--enc {
+  background-image: url(./images/ENC.jpg);
+}
+.ion-card__image--per {
+  background-image: url(./images/PER.png);
 }
 .ion-card__image--fence {
-  background-image: url(https://unsplash.it/800/600?image=59);
+  background-image: url(./images/ARE.jpg);
 }
 .ion-card__title {
   color: #696969;

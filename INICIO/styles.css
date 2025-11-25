@@ -58,6 +58,14 @@ body {
   transition: all 1000ms;
 }
 
+.log {
+  
+ 
+  width: 300px;
+  text-align: center;
+  transition: all 1000ms;
+}
+
 .content .logo {
   height: 180px;
   width: 180px;
@@ -460,12 +468,12 @@ footer .bottom_content section {
   }
 
   /* 🔽 Estilo específico para íconos */
-  .center img[src*="martillo.jpg"],
+  .center img[src*="marti.jpg"],
   .services img[src*="cap1.jpg"],
   .services img[src*="cap2.jpg"],
   .services img[src*="cap3.jpg"] {
-    width: 320px !important;
-    height: 400px !important;
+    width: 240px !important;
+    height: 350px !important;
   }
 
   .services img[src*="wh.png"],
@@ -533,14 +541,13 @@ footer .bottom_content section {
 }
 @media screen and (max-width: 768px) {
 
- 
-
   h1 {
     font-size: 1.6rem;
     padding: 2rem 1rem;
     text-align: center;
     font-weight: 300;
   }
+
   /* Carousel responsivo */
   section.carousel {
     padding: 0.5rem 0 1rem 0;
@@ -554,12 +561,17 @@ footer .bottom_content section {
     margin: 0 auto;
   }
 
+  /* 🔥 Ajuste correcto: solo se reduce la imagen, NO el carrusel */
   carousel-3d img {
-    width: 100%;
-    height: auto;
+    width: 25% !important;   /* ← Reduce solo la imagen */
+    height: auto !important;
     object-fit: cover;
+    transform: translateZ(0);
+    margin: 0 auto;          /* ← Centra la imagen dentro del slide */
+    display: block;          /* ← Evita saltos laterales */
   }
 }
+
 
 @media screen and (max-width: 768px) {
   .main-header-image {
