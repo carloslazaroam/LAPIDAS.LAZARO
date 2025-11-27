@@ -29,7 +29,7 @@ function showSlides(n) {
 // CONFIGURACIÓN — CAMBIA ESTO
 // ===========================================
 const PLACE_ID = "ChIJ6bXqBlmRYA0R6pcaoMqm-xs";
-const API_KEY = "AIzaSyBv1APZfaa7SggQYfya5CguNlA9TVUaNmw";
+const API_KEY = "";
 const MAX_REVIEWS = 3; // número de reseñas que quieres mostrar
 // ===========================================
 
