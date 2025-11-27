@@ -106,6 +106,7 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
+  
 
 .grid-5 {
   display: grid;
@@ -462,6 +463,19 @@ footer .bottom_content section {
     overflow: hidden;
   }
 
+.carru-furgocontainer {
+    display: flex;              /* Activa el diseño horizontal */
+    align-items: center;        /* Centra verticalmente */
+    justify-content: center;    /* Centra horizontalmente si quieres */
+    gap: 30px;                  /* Espacio entre imagen y texto */
+    width: 100%;
+    text-align: left;
+}
+
+.carru-furgoimage {
+    width: 250px;               /* El tamaño lo decides tú */
+    height: auto;               /* Mantiene proporción */
+}
   .grid-4,
   .grid-5 {
     grid-template-columns: 1fr;
@@ -580,4 +594,93 @@ footer .bottom_content section {
     object-fit: cover;
     margin: 0 auto;
   }
+}
+
+.google-review-box {
+    border: 1px solid #ddd;
+    padding: 18px;
+    max-width: 350px;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    font-family: Arial, sans-serif;
+}
+
+.google-logo {
+    height: 22px;
+    margin-right: 8px;
+}
+
+.review-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.rating {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fbbc04;
+}
+
+.review-text {
+    margin: 5px 0 15px;
+    font-size: 14px;
+    color: #444;
+}
+
+.review-button {
+    display: inline-block;
+    padding: 10px 14px;
+    background: #4285f4;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.review-button:hover {
+    background: #3367d6;
+}
+
+
+.carru-furgoimage{
+  width: 350px; height: 200px;
+}
+
+.grid-4 strong{
+  margin-top: 25px;
+}
+
+/* Tablets */
+@media screen and (max-width: 768px) {
+
+  .carru-furgoimage {
+      width: 260px !important;
+      height: 180px !important;
+  }
+
+  .grid-4 strong{
+  margin-bottom: 25px;
+}
+
+
+}
+
+/* Móviles */
+@media screen and (max-width: 480px) {
+  
+
+  .carru-furgoimage {
+      width: 260px !important;
+      height: auto !important;
+  }
+
+  .grid-4 strong{
+  margin-bottom: 25px;
+}
+
+
+  
 }

@@ -23,3 +23,40 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
 }
+
+
+// ===========================================
+// CONFIGURACIÓN — CAMBIA ESTO
+// ===========================================
+const PLACE_ID = "ChIJ6bXqBlmRYA0R6pcaoMqm-xs";
+const API_KEY = "AIzaSyBv1APZfaa7SggQYfya5CguNlA9TVUaNmw";
+const MAX_REVIEWS = 3; // número de reseñas que quieres mostrar
+// ===========================================
+
+function loadGoogleReviews() {
+    fetch(`https://maps.googleapis.com/maps/api/place/details/json?place_id=${PLACE_ID}&fields=reviews&key=${API_KEY}`)
+        .then(response => response.json())
+        .then(data => {
+            const reviews = data.result.reviews.slice(0, MAX_REVIEWS);
+            const container = document.getElementById("reviews-list");
+
+            reviews.forEach(r => {
+                container.innerHTML += `
+                <div class="review-item">
+                    <div class="review-header">
+                        <div class="review-author">${r.author_name}</div>
+                        <div class="review-stars">${"⭐".repeat(r.rating)}</div>
+                    </div>
+                    <div class="review-text">${r.text}</div>
+                </div>
+            `;
+            });
+        })
+        .catch(err => console.error("ERROR AL CARGAR RESEÑAS: ", err));
+}
+
+loadGoogleReviews();
+
+
+
+
