@@ -140,9 +140,16 @@ img {
   padding-top: 56.25%;
 }
 
+/* Vista móvil: 2 tarjetas por fila */
+@media (max-width: 768px) {
+  .ion-cards__item {
+    width: 50%;
+  }
+}
 
 .ion-card__image--flowers {
   background-image: url(./images/MAT.png);
+  
 }
 .ion-card__image--cruz {
   background-image: url(./images/CRU.png);
@@ -541,3 +548,22 @@ a{
       margin: 0 auto;
     }
   }
+
+  
+  
+  
+/* ===== MOBILE / TABLET ===== */
+@media (max-width: 56rem) {
+  /* Quitar filtros */
+  .ion-card__image {
+    filter: none !important;
+    transform: none !important;
+  }
+
+  /* Desactivar hover */
+  .ion-card:hover .ion-card__image {
+    filter: none !important;
+    transform: none !important;
+  }
+}
+
