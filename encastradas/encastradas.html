@@ -26,9 +26,12 @@
         </nav>
     </header>
     <main>
-        <h3 style="text-align: center; color: #ffffff; font-size: 40px; margin-top: 120px; font-weight: 150;">
+        <h3 class="titulo-ocultar-movil"
+            style="text-align: center; color: #ffffff; font-size: 40px; margin-top: 120px; font-weight: 150;">
             Catálogo
-            de lápidas encastradas/incrustadas</h3>
+            de lápidas encastradas/incrustadas
+        </h3>
+
         <div class="image-grid">
 
             <!-- Las imágenes se agregarán aquí -->
@@ -114,7 +117,7 @@
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>
         if (window.innerWidth > 768) {
-            // Solo se ejecuta en tablets/PC
+
             AOS.init({
                 once: true
             });
@@ -266,6 +269,15 @@
                 btn.onclick = () => {
                     currentPage = i;
                     updatePagination();
+
+                    // Esperar a que el DOM repinte (muy importante)
+                    setTimeout(() => {
+                        const firstVisible = document.querySelector('.image-item[style*="block"]');
+
+                        if (firstVisible) {
+                            firstVisible.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }, 50);
                 };
 
                 pagination.appendChild(btn);
