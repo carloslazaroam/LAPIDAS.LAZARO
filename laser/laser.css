@@ -118,6 +118,7 @@ img {
     overflow: auto;
     background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.9);
+    
 }
 
 .modal-content {
@@ -125,11 +126,17 @@ img {
     display: block;
     width: 80%;
     max-width: 700px;
+     box-shadow: 0 10px 50px rgba(0,0,0,0.5);
 }
 
 .modal-content, .caption {
     animation-name: zoom;
     animation-duration: 0.6s;
+    text-align: center;
+     margin-top: 10px;
+    font-size: 18px; /* opcional */
+    color: #fff; 
+    
 }
 
 @keyframes zoom {
@@ -139,21 +146,17 @@ img {
 
 .close {
     position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
+    top: 25px;
+    right: 40px;
     font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-    color: #bbb;
-    text-decoration: none;
+    color: #fff;
     cursor: pointer;
+    transition: 0.2s;
 }
 
+.close:hover {
+    color: #ccc;
+}
 .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -177,7 +180,6 @@ img {
 .prev:hover, .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
-
 
   /*FOOTER*/
 .bg-dark {
@@ -429,15 +431,7 @@ img {
       
       }
 
-
-   @media screen and (max-width: 768px) {
-  [data-aos] {
-    opacity: 1 !important;
-    transform: none !important;
-  }
-}
-
- @media screen and (max-width: 768px) {
+        @media screen and (max-width: 768px) {
           .main-header-image {
             max-height: 200px;
             width: 100%;
@@ -480,6 +474,19 @@ img {
             }
         }
 
+        @media screen and (max-width: 768px) {
+  [data-aos] {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
 
-        
+@media (max-width: 480px) {
+  .titulo-ocultar-movil {
+    display: none !important;
+  }
+}
+
+
+
         
